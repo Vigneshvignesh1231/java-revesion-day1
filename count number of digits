@@ -1,0 +1,19 @@
+import java.util.*;
+class numberofdigits{
+	public static void main(String[] arg){
+		Scanner input=new Scanner(System.in);
+        int count=0;
+        try {
+        	System.out.print("Enter the Digits: ");
+        	int dig=input.nextInt();
+        	for(;dig!=0;dig/=10,++count) {
+        		
+        	}
+        	System.out.println("No of digits: "+count);
+        	System.out.println("Rest of code in try block");
+        }
+        catch(InputMismatchException e) {
+        	System.out.println("InputMitmatchException " +e.getMessage());
+        }
+}
+}
